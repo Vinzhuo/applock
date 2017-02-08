@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/liuzhuolin/work/vilin/Drinker/libwatchdog/src/main/assets"><file name="armeabi/watchdogd" path="/Users/liuzhuolin/work/vilin/Drinker/libwatchdog/src/main/assets/armeabi/watchdogd"/></source><source path="/Users/liuzhuolin/work/vilin/Drinker/libwatchdog/build/generated/assets/shaders/release"/></dataSet><dataSet config="release"><source path="/Users/liuzhuolin/work/vilin/Drinker/libwatchdog/src/release/assets"/></dataSet></merger>

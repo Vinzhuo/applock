@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.drinker.applock">
+
+    <uses-sdk tools:overrideLibrary="com.r0adkll.slidr" />
+
+    <application
+        android:name=".DrinkApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MyAppTheme">
+        <activity android:name=".applist.view.MainActivity"></activity>
+        <activity
+            android:name=".password.view.PasswordActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".password.view.CompareActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".LockService"
+            android:exported="false">
+        </service>
+
+        <receiver
+            android:name=".LockReceiver"
+            android:enabled="true"
+            android:exported="false"></receiver>
+    </application>
+
+</manifest>

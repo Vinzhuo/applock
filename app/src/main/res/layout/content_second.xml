@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".password.view.PasswordActivity"
+    tools:showIn="@layout/activity_second">
+
+    <FrameLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <com.andexert.library.RippleView
+            android:id="@+id/rv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:rv_centered="true"
+            android:gravity="center"
+            app:rv_zoom="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="返回"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </com.andexert.library.RippleView>
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="请输入密码"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="请输入密码"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+    <com.drinker.applock.password.view.CustomLockView
+        android:id="@+id/lv_lock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        app:color_error_ring="#e91515"
+        app:color_on_ring="#64a460"
+        app:color_up_ring="#3ce915"
+        app:inner_background_width="19dp"
+        app:inner_ring_width="14dp"
+        app:outer_ring_spacing_width="50dp" />
+</LinearLayout>

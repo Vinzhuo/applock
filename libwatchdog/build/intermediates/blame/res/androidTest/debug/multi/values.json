@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/Users/liuzhuolin/work/vilin/Drinker/libwatchdog/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 48,
+                    "endOffset": 99
+                },
+                "from": {
+                    "file": "/Users/liuzhuolin/work/vilin/Drinker/libwatchdog/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 48,
+                        "endOffset": 99
+                    }
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">应用隐私锁</string>
+    <string name="lock_toast">屏幕关闭后，应用锁生效</string>
+</resources>

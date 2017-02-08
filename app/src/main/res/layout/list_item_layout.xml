@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/app_list_item_selector"
+    >
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="@dimen/icon_width"
+        android:layout_height="@dimen/icon_width"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/icon_marin_left"/>
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/app_icon"
+        android:layout_toLeftOf="@+id/item_lock"
+        android:layout_marginLeft="@dimen/icon_marin_left"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/app_name_size"/>
+    <ImageView
+        android:id="@+id/item_lock"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:scaleType="centerInside"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/setting_item_edge_element_margin"
+        android:layout_marginEnd="@dimen/setting_item_edge_element_margin"/>
+</RelativeLayout>

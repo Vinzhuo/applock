@@ -1,0 +1,54 @@
+apply plugin: 'com.android.library'
+
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+}
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.3"
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_7
+        targetCompatibility = JavaVersion.VERSION_1_7
+    }
+
+    defaultConfig {
+        minSdkVersion 9
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+//        release {
+//            minifyEnabled true
+//            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//            shrinkResources true
+//        }
+    }
+    sourceSets {
+        main {
+            manifest.srcFile './src/main/AndroidManifest.xml'
+            jniLibs.srcDirs = ['libs']
+            aidl.srcDirs = ['src']
+            assets.srcDirs = ['assets']
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-annotations:23.1.0'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    //    testCompile 'junit:junit:4.12'
+    compile project(path: ':core')
+}
+
+
+

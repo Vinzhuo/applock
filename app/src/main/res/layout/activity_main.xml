@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.drinker.applock.applist.view.MainActivity">
+
+    <com.drinker.applock.applist.view.AppsRecyclerView
+        android:id="@+id/applist_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:animationCache="false"
+        android:fadingEdge="none"
+        android:scrollbars="none">
+    </com.drinker.applock.applist.view.AppsRecyclerView>
+
+</RelativeLayout>

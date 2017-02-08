@@ -1,0 +1,4 @@
+#ifndef UTILS_H
+#define UTILS_H
+
+#endif //MONEYSHEILD_MASTER_UTILS_H

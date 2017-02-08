@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">App Safe Lock</string>
+    <string name="lock_toast">Lock again when screen is off</string>
+    <string name="set_title">Set passcode</string>
+    <string name="modify_title">Modify passcode</string>
+    <string name="verify_title">Verify passcode</string>
+</resources>

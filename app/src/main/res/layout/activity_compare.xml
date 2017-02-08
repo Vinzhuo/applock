@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_compare"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_7fffffff"
+    tools:context="com.drinker.applock.password.view.CompareActivity">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="请输入密码"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+    <com.drinker.applock.password.view.CustomLockView
+        android:id="@+id/lv_lock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@android:color/white"
+        app:color_error_ring="#e91515"
+        app:color_on_ring="#64a460"
+        app:color_up_ring="#3ce915"
+        app:inner_background_width="19dp"
+        app:inner_ring_width="14dp"
+        app:outer_ring_spacing_width="50dp" />
+</RelativeLayout>

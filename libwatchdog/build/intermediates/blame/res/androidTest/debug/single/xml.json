@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/liuzhuolin/work/vilin/Drinker/libwatchdog/build/intermediates/res/merged/androidTest/debug/xml/sync_adapter.xml",
+        "source": "/Users/liuzhuolin/work/vilin/Drinker/libwatchdog/build/intermediates/bundles/debug/res/xml/sync_adapter.xml"
+    },
+    {
+        "merged": "/Users/liuzhuolin/work/vilin/Drinker/libwatchdog/build/intermediates/res/merged/androidTest/debug/xml/authenticator.xml",
+        "source": "/Users/liuzhuolin/work/vilin/Drinker/libwatchdog/build/intermediates/bundles/debug/res/xml/authenticator.xml"
+    }
+]
